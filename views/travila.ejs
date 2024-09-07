@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <div class="scroll-watcher"></div>
+  <%- include ('./partial/header') %>
+
+  <main class="main">
+    <button class="btn btn-dark search-btns">Tour</button>
+    <button class="btn btn-light search-btns">Hotels</button>
+    <button class="btn btn-light search-btns">Tickets</button>
+    <div id="wrap">
+      <form action="" autocomplete="on">
+      <input id="search" name="search" type="text"><input id="search_submit"  type="submit">
+      </form>
+    </div>
+    <!-- Hero Section -->
+    
+    
+    <section id="testimonials" class="testimonials section light-background">
+         <div class="hero-bg">
+
+     
+      <div class="container section-title" data-aos="fade-up">
+        <h1>Your Journey , Your Way</h1>
+        <h4>Dicover the World's Treasures with Travila</h4>
+       
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <div class="profile mt-auto">
+                    <img src="img/pexels-asadphoto-1268855.jpg" class="testimonial-img" alt="">
+                    <h3>Exceptional</h3>
+                    <h4>big tour</h4>
+                  </div>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  4 days 3 nights - Family
+                </p>
+                <p>
+                  $45.25 / person
+                </p>
+               
+                <button class="buttons">Book Now</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <div class="profile mt-auto">
+                    <img src="img/aus-img-1.jpg" class="testimonial-img" alt="magic mountins">
+                    <h3>4.96 (672 reviews)</h3>
+                    <h4>magic mountin</h4>
+                  </div>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  2 days 3 nights - Family
+                </p>
+                <p>
+                  $48.25 / person
+                </p>
+                <button class="buttons">Book Now</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <div class="profile mt-auto">
+                    <img src="img/singa7.jpg" class="testimonial-img" alt="singapore">
+                    <h3>4.96 (672 reviews)</h3>
+                    <h4>singapore</h4>
+                  </div>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  3 days 3 nights - Company
+                </p>
+                <p>
+                  $17.32 / person
+                </p>
+                <button class="buttons">Book Now</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <div class="profile mt-auto">
+                    <img src="img/italy2.jpg" class="testimonial-img" alt="italy">
+                    <h3>4.96 (672 reviews)</h3>
+                    <h4>Grand Canyon Horseshoe Bend 2 days</h4>
+                  </div>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  7 days 6 nights - Small group
+                </p>
+                <p>
+                  $15.63 / person
+                </p>
+                <button class="buttons">Book Now</button>
+              </div>
+            </div>
+
+            
+          
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+          <p data-aos="fade-up" data-aos-delay="100"><br></p>
+         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section" data-aos="fade-left" data-aos-delay="400">
+       <h1 style="text-align: center;">Popular Destinations</h1>
+       <h4 style="text-align: center;">Favorite Destination based on customer reviews</h4>
+      <div class="marquee">
+        <div class="marquee__group">
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="500">
+            <img src="img/destination/Santa_Maria_della_Salute_(50428075772).jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>venice</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="600">
+            <img src="img/destination/KeizersgrachtReguliersgrachtAmsterdam.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>amsterdam</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="700">
+            <img src="img/destination/Budapest_Hungarian_Parliament_(31363963556).jpg" class="card-img-top" alt="Budapest"data-aos="fade-left" data-aos-delay="700">
+            <div class="card-body">
+              <p>Budapest</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="800">
+            <img src="img/destination/Lisbon_(36831596786)_(cropped).jpg" class="card-img-top" alt="" >
+            <div class="card-body">
+              <p>Lisbon</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="900">
+            <img src="img/destination/London_Skyline_(125508655).jpeg" class="card-img-top" alt="" >
+            <div class="card-body">
+              <p>London</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+  
+        </div>
+      </div>    
+      </div>
+      
+      <div class="marquee marquee--reverse">
+        <div class="marquee__group">
+          <div class="card" style="width: 17rem; border-radius: 18px; margin-left: 80px;" data-aos="fade-left" data-aos-delay="600">
+            <img src="img/destination/Rideau_Canal_at_downtown_Ottawa.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>ottawa</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="700">
+            <img src="img/destination/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_août_2014_(2).jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>Paris</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="800">
+            <img src="img/destination/Brooklyn_Bridge_Manhattan.jpg" class="card-img-top" alt="Budapest ">
+            <div class="card-body">
+              <p>Manhattan</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="900">
+            <img src="img/destination/Lisbon_(36831596786)_(cropped).jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>Lisbon</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+          <div class="card" style="width: 17rem; border-radius: 18px;" data-aos="fade-left" data-aos-delay="1000">
+            <img src="img/destination/Budapest_Hungarian_Parliament_(31363963556).jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <p>London</p>
+              <p class="card-text">345 Tours 248 Activities <i class="bi bi-arrow-right-circle"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+  <h1 style="text-align: center;">Top rated Hotels</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="flipcard">
+               <div class="flipcard-wrap">
+                 <div class="card card-front">
+                    <img src="img/pexels-asadphoto-1268855.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <span class="badge bg-warning text-dark">Exceptional</span>
+                      <h5>California Sunset/Twilight Boat Cruise</h5>
+                      <p>$35.62 / person</p>
+                    </div>
+                  </div>
+                  <div class="card card-back">
+                    <div class="card-body">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius est quam dolorem facilis consequatur optio officiis!
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="flipcard">
+               <div class="flipcard-wrap">
+                 <div class="card card-front">
+                    <img src="/img/aus-img-1.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <h5>4.96 (672 reviews)</h5>
+                      <p>magic mountin</p>
+                      <p>$48.25 / person</p>
+                    </div>
+                  </div>
+                  <div class="card card-back">
+                    <div class="card-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, dolore corporis? Nihil odio accusantium sint aliquam.
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="flipcard">
+               <div class="flipcard-wrap">
+                 <div class="card card-front">
+                    <img src="img/italy2.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <h5>4.96 (672 reviews)</h5>
+                      <p>Grand Canyon Horseshoe Bend 2 days</p>
+                      <p> $15.63 / person</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card card-back">
+                    <div class="card-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, dolore corporis? Nihil odio accusantium sint aliquam.
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="flipcard">
+               <div class="flipcard-wrap">
+                 <div class="card card-front">
+                    <img src="img/singa7.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                      <h5>4.96 (672 reviews)</h5>
+                      <p>singapore</p>
+                      <p>$17.32 / person</p>
+                    </div>
+                  </div>
+                  <div class="card card-back">
+                    <div class="card-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, dolore corporis? Nihil odio accusantium sint aliquam.
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+    
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <!-- <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><
+
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      
+       <div class="container">
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            
+                
+                    
+                   
+                        
+        
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="900">
+            
+                
+                    
+                    
+            
+             
+          </div>
+          
+                
+              </div>        
+            </div>
+            
+      </div>
+
+      <section id="about" class="about section light-background">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-xl-center gy-5">
+  
+            <div class="col-xl-5 content">
+              <h2 >Why Choose US</h2>
+             <h3>dare to live the lift you've alwayes wanted</h3>
+             <p>discover how you can offset adventure's carbon emissions and support the sustainable initaitive paracticed our operators wo</p>
+             
+        
+             <img src="img/playstore/pngwing.com.png" alt="" class="card-img-top w-50">
+             <img src="img/playstore/png-transparent-itunes-app-store-apple-logo-apple-text-rectangle-logo.png" alt="" class="card-img-top w-50">
+            </div>
+  
+            <div class="col-xl-7">
+              <div class="row gy-4 icon-boxes">
+  
+                <div class="col-md-6 " data-aos="fade-up" data-aos-delay="200">
+                  <img src="img/choose/Adapting-to-the-Era-of-Advanced-Line-Replacements-in-Telecommunication_1.jpg" alt="" class="w-100">
+                </div> <!-- End Icon Box -->
+  
+                <div class="col-md-6 " data-aos="fade-up" data-aos-delay="300">
+                  <img src="img/choose/istockphoto-484925688-612x612.jpg" alt="" class="w-100">
+                </div> <!-- End Icon Box -->
+  
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <img src="img/choose/6498f46fa11cc.jpg" alt="" class="w-100">
+                </div> <!-- End Icon Box -->
+  
+                <div class="col-md-6 " data-aos="fade-up" data-aos-delay="500">
+                  <img src="img/choose/SOBK0622029_1560x880_desktop.jpeg" alt="" class="w-100">
+                </div> <!-- End Icon Box -->
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+      </section>
+     <!-- End Section Title -->
+     
+      
+    </section><!-- /Features Section -->
+
+    <!-- Features Details Section -->
+    <section id="features-details" class="features-details section">
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="/img/payment/360_F_455102361_RsJAeKOVlrrbvLLRtrFQ3K6VAuDg0b4b.png" class="w-100" alt="">
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Easy payment</h3>
+              <p>
+                Discover Dream Destinations with Ease
+              </p>
+              <a href="#book" class="btn more-btn">payment methods</a>
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-5 d-flex align-items-center order-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content">
+              <h3>Subsribe to see secret deals prices drop the moment you sign up</h3>
+              <p>
+                 
+              </p>
+              <a href="#contact" class="btn more-btn">subsribe</a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/payment/pexels-fabianwiktor-994605.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Details Section -->
+
+    <!-- Services Section -->
+   
+    <!-- Faq Section -->
+    
+    
+
+    <!-- Testimonials Section -->
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>C572+J79, Sana'a, Yemen</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Contact Us</h3>
+              <p>+967 777 296 855</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p>asdasd@asdasd.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div  data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61553.476647076815!2d44.219461599999995!3d15.3714873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1725674607992!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Google Maps -->
+
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"><img src="img/logo.png" alt=""></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Yemen</p>
+            <p>Sana'a, Yemen</p>
+            <p> <span></span><strong>&nbsp;: Email</strong></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4> useful links</h4>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us </a></li>
+            <li><a href="#"> Services</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#"> contact</a></li>
+          </ul>
+        </div>
+
+    
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SAMA-CENTER</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="#">Haitham Homaid</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+    <!-- <script>
+         let typed = new Typed (".span1", {
+             strings: ["live", "City","Hotels"],
+             typeSpeed: 100,
+             backSpeed: 100,
+             loop: true
+ 
+         });
+         </script> -->
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="js/loaded.js"></script>
+  <script>
+    const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+function mobileNavToogle() {
+  document.querySelector('body').classList.toggle('mobile-nav-active');
+  mobileNavToggleBtn.classList.toggle('bi-list');
+  mobileNavToggleBtn.classList.toggle('bi-x');
+}
+mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  </script>
+
+</body>
+
+</html>
